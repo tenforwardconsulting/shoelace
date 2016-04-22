@@ -29,7 +29,9 @@ Add the following to your app/assets/stylesheets/application.sass
 Optionally override the following SASS variables
 
 `$border-bottom-color: #ddd` - border color of the 'border-bottom' class
+
 `$big-text-size: 20px` - font size of the 'big-text' class
+
 `$small-text-size: 12px` - font size of the 'small-text' class
 
 ## Development
