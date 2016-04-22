@@ -22,7 +22,9 @@ Or install it yourself as:
 
 Add the following to your app/assets/stylesheets/application.sass
 
-`@import shoelace`
+```ruby
+@import shoelace
+```
 
 ## Development
 
