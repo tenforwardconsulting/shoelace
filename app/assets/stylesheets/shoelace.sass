@@ -1,11 +1,13 @@
 @import compass/utilities/general/clearfix
 
-$light-border: #ddd !default
+$border-bottom-color: #ddd !default
+$big-text-size: 20px !default
+$small-text-size: 12px !default
 
 .big-text
-  font-size: 22px
+  font-size: $big-text-size
 .small-text
-  font-size: 14px
+  font-size: $small-text-size
 
 .padding-5
   padding: 5px
@@ -14,7 +16,9 @@ $light-border: #ddd !default
 .padding-20
   padding: 20px
 .no-margin
-  margin-bottom: 0
+  margin: 0
+.no-padding
+  padding: 0
 
 .center
   text-align: center
@@ -31,6 +35,8 @@ $light-border: #ddd !default
 
 .width-25
   width: 25%
+.width-33
+  width: (100% / 3)
 .width-50
   width: 50%
 .width-100
@@ -38,11 +44,18 @@ $light-border: #ddd !default
 
 .upper-case
   text-transform: uppercase
+.lower-case
+  text-transform: lowercase
 .normal-case
-  text-transform: none !important
+  text-transform: initial !important
 
 .border-bottom
-  border-bottom: 1px solid $light-border
+  border-bottom: 1px solid $border-bottom-color
+
+.ellipsify
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
 
 .columns
   +clearfix
