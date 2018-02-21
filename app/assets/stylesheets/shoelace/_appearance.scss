@@ -1,0 +1,5 @@
+// https://caniuse.com/#feat=css-appearance  $appearance: unquote($appearance);
+@mixin appearance($appearance) {
+  @include with-prefix(-moz)    {    -moz-appearance: $appearance; }
+  @include with-prefix(-webkit) { -webkit-appearance: $appearance; }
+}
