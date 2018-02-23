@@ -1,0 +1,73 @@
+@import shoelace/clearfix
+
+$border-bottom-color: #ddd !default
+$big-text-size: 20px !default
+$small-text-size: 12px !default
+
+.big-text
+  font-size: $big-text-size
+.small-text
+  font-size: $small-text-size
+
+.padding-5
+  padding: 5px
+.padding-10
+  padding: 10px
+.padding-20
+  padding: 20px
+.no-margin
+  margin: 0
+.no-padding
+  padding: 0
+
+.center
+  text-align: center
+.left
+  text-align: left
+.right
+  text-align: right
+.float-left
+  float: left
+.float-right
+  float: right
+.clear-both
+  clear: both
+
+.width-25
+  width: 25%
+.width-33
+  width: (100% / 3)
+.width-50
+  width: 50%
+.width-100
+  width: 100%
+
+.upper-case
+  text-transform: uppercase
+.lower-case
+  text-transform: lowercase
+.normal-case
+  text-transform: initial !important
+
+.border-bottom
+  border-bottom: 1px solid $border-bottom-color
+
+.ellipsify
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
+
+.columns
+  +clearfix
+  .cols4
+    float: left
+    padding: 5px
+    width: 25%
+  .cols3
+    float: left
+    padding: 5px
+    widows: (100% / 3)
+  .cols2
+    float: left
+    padding: 10px
+    width: 50%
